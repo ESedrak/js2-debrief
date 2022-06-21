@@ -3,7 +3,7 @@
 // 1. That logs “The current date and time is “ - the current date and time
 // hint; you will need to research the Date object to get the current date! (https://www.w3schools.com/jsref/jsref_obj_date.asp)
 
-dateTime = () => {
+const dateTime = () => {
   let date = new Date();
   let year = date.getFullYear();
 
@@ -52,6 +52,13 @@ dateTime();
 
 // 2. That prints “I’m ready” after 5 seconds.
 // hint: you will need to research the setTimeout JavaScript function. (https://www.w3schools.com/jsref/met_win_settimeout.asp)
+let timeout;
+function ready() {
+  timeout = setTimeout(myGreeting, 5000);
+}
+const myGreeting = () => console.log("i'm ready!");
+
+ready();
 
 // 3. Create a function to convert today’s temperature from Celsius to Fahrenheit
 // a) Celsius to Fahrenheit: (°C × 9/5) + 32 = °F
