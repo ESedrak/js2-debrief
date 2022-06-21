@@ -63,3 +63,15 @@ ready();
 // 3. Create a function to convert today’s temperature from Celsius to Fahrenheit
 // a) Celsius to Fahrenheit: (°C × 9/5) + 32 = °F
 // b) Fahrenheit to Celsius: (°F − 32) x 5/9 = °C
+
+convertToFarehnheit = (celsiusTemperature) => {
+  let farenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  return farenheitTemperature;
+};
+
+convertToCelsius = (farenheitTemperature) => {
+  let celsiusTemperature = ((farenheitTemperature - 32) * 5) / 9;
+  return celsiusTemperature;
+};
+
+console.log(convertToFarehnheit(10), convertToCelsius(50));
