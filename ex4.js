@@ -12,7 +12,7 @@ console.log(divisibleByFive.join());
 
 for (let i = 0; i < 3; i++) {
   console.log("I'm the outer loop!");
-  for (let j = 0; j < 1; j++) {
+  for (let j = 0; j < 3; j++) {
     console.log("I'm the inner loop!");
   }
 }
