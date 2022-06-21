@@ -6,8 +6,7 @@
 concatenate = (first, last) => `My name is ${first} ${last} !`;
 
 getName = (firstName, lastName) => {
-  let result;
-  result = concatenate(firstName, lastName);
+  let result = concatenate(firstName, lastName);
   console.log(result);
 };
 
